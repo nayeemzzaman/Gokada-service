@@ -1,0 +1,23 @@
+.create-account{
+    text-align:center;
+    background-color:white;
+    margin-top: 50px;
+    height: 600px;
+    padding-top: 50px;
+}
+.create-account input{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    width: 300px;
+}
+.createBtn{
+    margin-top: 20px;
+    background-color:rgb(255, 154, 71);
+    font-weight: 600;
+    border: none;
+    width: 300px;
+    padding: 5px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 101,
+        "quantity": 4,
+        "name": "car",
+        "passenger": "4",
+        "ticketPrice":"$70",
+        "image": "https://i.ibb.co/T0Yn46v/Frame-2.png",
+        "logo": "https://i.ibb.co/Hz8BmQF/peopleicon.png"
+    },
+    {
+        "id": 102,
+        "quantity": 4,
+        "name": "bus",
+        "passenger": "50",
+        "ticketPrice":"$150",
+        "image": "https://i.ibb.co/7pRvBwv/Frame-1.png",
+        "logo": "https://i.ibb.co/Hz8BmQF/peopleicon.png"
+    },
+    {
+        "id": 103,
+        "quantity": 5,
+        "name": "train",
+        "passenger": "100",
+        "ticketPrice":"$200",
+        "image": "https://i.ibb.co/VxMXYFs/Group.png",
+        "logo": "https://i.ibb.co/Hz8BmQF/peopleicon.png"
+    },
+    {
+        "id": 104,
+        "quantity": 3,
+        "name": "bike",
+        "passenger": "1",
+        "ticketPrice":"$10",
+        "image": "https://i.ibb.co/MDJfvGn/Frame.png",
+        "logo": "https://i.ibb.co/Hz8BmQF/peopleicon.png"
+    }
+]

@@ -1,0 +1,30 @@
+
+.home-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+.home-card img{
+    height: 120px;
+    width: 120px;
+    color:white;
+    margin-bottom: 20px;
+}
+.home-card{
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 25%;
+    height: 250px;
+    margin-left: 20px;
+    padding-top: 50px;
+    border-radius: 7px;
+}
+.home-card:hover{
+    background-color: rgb(241, 238, 238);
+}
+.home-card:hover img{
+    height: 125px;
+    width: 125px;
+}

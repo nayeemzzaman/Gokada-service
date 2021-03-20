@@ -1,0 +1,38 @@
+.header{
+    text-align: center;
+    margin-top:  30px;
+    margin-bottom: 20px;
+}
+.header h2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    height: 70px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    background-color:white;
+    cursor: pointer;
+}
+.header h2:hover{
+    background-color: #00C795;
+    border: 5px solid white;
+    color:white;
+}
+.header-link{
+    font-weight: 600;
+    text-decoration:none;
+    color: black;
+    padding-top: 50px;
+    margin: 20px;
+    
+}
+.login-button{
+    
+    padding: 5px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    background-color: rgb(255, 154, 71);
+}
