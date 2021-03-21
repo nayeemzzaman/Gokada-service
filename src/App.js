@@ -12,6 +12,8 @@ import { createContext, useState } from 'react';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Searching from './components/Searching/Searching';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export const userContext = createContext();
 
 function App() {

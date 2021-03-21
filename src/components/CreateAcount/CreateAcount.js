@@ -8,6 +8,8 @@ import firebaseConfig from '../Login/firebase.config';
 import './CreateAcount.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const CreateAcount = () => {
     if (!firebase.apps.length) {
         firebase.initializeApp(firebaseConfig);
@@ -166,6 +168,7 @@ const CreateAcount = () => {
                 <br />
                 <button className='createBtn' type="submit">Create Account</button>
             </form >
+            <p>Already have an account ? <span><Link to='/login'>Login</Link></span> </p>
             <p>or</p>
             <button className='facebookBtn' onClick={facebookSignIn}>
                 <FontAwesomeIcon icon={faFacebook}style={{fontSize:'20px',marginLeft:'-5px',marginRight:'90px'}}></FontAwesomeIcon> Continue with Facebook</button>

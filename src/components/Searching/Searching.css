@@ -1,9 +1,14 @@
+.searching-body{
+    background-color: #beeaf7;
+    height: 500px;
+}
+
 .result{
     width: 300px;
     height: 400px;
     background-color: lightgray;
     margin-left: 120px;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 60px;
     border-radius:5px;
 }
@@ -17,6 +22,7 @@
 .way{
     height: 100px;
     padding: 10px;
+    margin-bottom: 30px;
     border-radius:5px;
     color: white;
     background-color: rgb(255, 145, 71);
@@ -30,7 +36,46 @@
     margin-top: 10px;
     height: 20px;
     width: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .passenger{
-    margin-right: 20px;
+    margin-right: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.price{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.search-form{
+    margin-top: 50px;
+    padding-top: 20px;
+    margin-left: 20%;
+    border-radius:8px;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    height: 300px;
+    width: 300px;
+}
+.search-form input{
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 7px;
+}
+.searchBtn{
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 7px;
+    background-color:rgb(255, 154, 71);
+    margin-top: 50px;
+    font-weight: 600;
+}
+@media (max-width: 600px){
+    .result{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

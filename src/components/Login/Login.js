@@ -7,6 +7,8 @@ import firebaseConfig from './firebase.config';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import './Login.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
 } else {
@@ -73,6 +75,7 @@ const Login = () => {
                 var errorMessage = error.message;
                 var email = error.email;
                 var credential = error.credential;
+                alert(errorMessage);
             });
     }
     const handleSubmit = (event) => {
@@ -90,7 +93,6 @@ const Login = () => {
                     }
                     setUser(signInUser);
                     setLoggedInUser(signInUser);
-
                     history.replace(from);
                 })
                 .catch((error) => {
@@ -100,10 +102,14 @@ const Login = () => {
                     const newUserInfo = {}
                     newUserInfo.error = errorMessage;
                     newUserInfo.success = false;
+                    alert(errorMessage);
                     setUser(newUserInfo);
                     setLoggedInUser(newUserInfo);
                     history.replace(from);
                 });
+        }
+        else{
+            alert("Wrong password or email");
         }
         event.preventDefault();
     }
@@ -144,9 +150,11 @@ const Login = () => {
                 <p>New user ? <span><Link to='/createAccount'>Create Account</Link></span> </p>
             </div>
             <p>or</p>
-            <button className='facebookBtn' onClick={facebookSignIn}>Continue with Facebook</button>
+            <button className='facebookBtn' onClick={facebookSignIn}>
+                <FontAwesomeIcon icon={faFacebook}style={{fontSize:'20px',marginLeft:'-5px',marginRight:'90px'}}></FontAwesomeIcon> Continue with Facebook</button>
             <br />
-            <button className='googleBtn' onClick={googleSignIn}>Continue with Google</button>
+            <button className='googleBtn' onClick={googleSignIn}>
+                <FontAwesomeIcon icon={faGoogle}style={{fontSize:'20px',marginLeft:'-10px',marginRight:'100px'}}></FontAwesomeIcon> Continue with Google</button>
         </div>
     );
 };

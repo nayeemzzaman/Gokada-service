@@ -7,7 +7,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 5px solid black;
     height: 70px;
     padding: 10px;
@@ -29,10 +29,62 @@
     margin: 20px;
     
 }
-.login-button{
-    
-    padding: 5px;
+.header-link:hover{
+    padding: 7px;
     padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 5px;
     background-color: rgb(255, 154, 71);
+    color: white;
+}
+.headerLink-user{
+    background-color: rgb(163, 162, 162);
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.headerLink-user:hover{
+    color: white;
+}
+.login-button{
+    padding: 7px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight:600;
+    color:white;
+    background-color: rgb(255, 154, 71);
+}
+.login-button:hover{
+    background-color:blue;
+    color:white;
+}
+@media (max-width:600px){
+    .header-link{
+        margin: 5px;
+        font-weight: 400;
+    }
+    .header-link:hover{
+        padding: 3px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+        background-color: rgb(255, 154, 71);
+        color: white;
+    }
+    .headerLink-user{
+        background-color: rgb(163, 162, 162);
+        color: white;
+        padding: 5px;
+        border-radius: 7px;
+        font-weight: 400;
+    }
+    .headerLink-user:hover{
+        color: white;
+    }
 }

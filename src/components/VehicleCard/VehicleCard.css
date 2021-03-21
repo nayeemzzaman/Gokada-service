@@ -1,0 +1,37 @@
+.home-card img{
+    height: 120px;
+    width: 120px;
+    color:white;
+    margin-bottom: 20px;
+}
+.home-card{
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    padding-top: 50px;
+    border-radius: 7px;
+}
+.home-card:hover{
+    background-color: rgb(241, 238, 238);
+}
+.home-card:hover img{
+    height: 125px;
+    width: 125px;
+}
+@media (max-width: 640px){
+    
+    .home-area{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+    }
+    .home-card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+}
