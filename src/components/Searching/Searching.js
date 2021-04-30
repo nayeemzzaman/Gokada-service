@@ -52,7 +52,6 @@ const Searching = () => {
     return (
         <div className="searching-body">
             <div className='col-lg-6'>
-                <hr />
                 {
                     click.isClick ?
                         <div className=' result'>
@@ -92,7 +91,8 @@ const Searching = () => {
                 }
 
             </div>
-            <div className='col-lg-6'>
+            <div className='map col-lg-6'>
+            
                 <GoogleMap
                     style={{height: '100%',width: '100%'}}
                     bootstrapURLKeys={{ key: 'AIzaSyBBPQjnhpxQ1c3GtnK5ZgUVYioACEO_Bn8' }}

@@ -1,8 +1,11 @@
 .searching-body{
+    display: flex;
     background-color: #beeaf7;
     height: 500px;
 }
-
+.map{
+    margin-top:50px;
+}
 .result{
     width: 300px;
     height: 400px;
